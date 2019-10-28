@@ -2,17 +2,35 @@
 
 ## Objectives
 
-- Use the react-redux library and the redux library to build an application with
-  multiple resources.
+  - Use the react-redux library and the redux library to build an application with
+    multiple resources.
 
 ## Overview
 
-In this lab we will be building an application for making quotes. This will
-include creating a quote and updating the global Redux state.
+  In this lab we will be building an application for making quotes. This will
+  include creating a quote and updating the global Redux state.
 
-In our `App` component we will render the components: `QuoteForm` & `Quotes`. We
-will also need a reducer and actions file for our Quotes.
+  In our `App` component we will render the components: `QuoteForm` & `Quotes`. We
+  will also need a reducer and actions file for our Quotes.
 
+
+```text
+App
+|--Header
+|--QuotesContainer
+|   |
+|   |--QuoteForm
+|   |   |-internalState for onChange
+|   |   |--QuoteInput
+|   |   |--Author
+|   |
+|   |--QuoteCard
+|   |--QuoteCard
+|   |--QuoteCard
+|   |--QuoteCard
+|   |--QuoteCard
+|
+```
 ### Quotes Reducer
 
 The quotes reducer should have an initial state of:
